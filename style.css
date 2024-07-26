@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to top, #d6deea 0%, #d43f8d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.output {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: rgb(15, 12, 12);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-bottom: 4px solid gray;
+}
+.result{
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    padding-left: 15px;
+    width: 300px;
+    user-select: none;
+}
+.copy{
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+.copy:hover{
+    cursor: pointer;
+}
+
+.required-ifo {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    height: 400px;
+    width: 400px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.length {
+    text-align: center;
+}
+
+.slider{
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: linear-gradient(109.8deg, rgb(238, 9, 121) 42.8%, rgb(255, 106, 0) 83.3%);
+    background-color:white;
+    width: 350px;
+    height: 10px;
+    background-repeat: no-repeat;
+    border: none;
+}
+/* .slider:focus{
+    outline: 2px solid yellow;
+} */
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 100ms ease-in;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    background-color: black;
+    outline: 2px solid yellow;
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+}
+
+
+.input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.input input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(3, 23, 23);
+    border-radius: 5px;
+    position: relative;
+}
+.input input:checked{
+    background-color: aquamarine;
+}
+
+.input input:checked::before{
+    content:'✓';
+    position: absolute;
+    left: 20%;
+    top: -12.5px;
+    font-size: 1.5rem;
+    color: black;
+    font: 700;
+
+}
+.input label{
+    user-select: none;
+    pointer-events: none;
+}
+
+.strength-check {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+.generate {
+    background-color: #161615;
+    width: 350px;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    user-select: none;
+}
+.generate:hover{
+    scale: 0.9;
+    cursor: pointer;
+}
+.light{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(234, 227, 227);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.copy-pass{
+    background-color: white;
+    color: rgb(239, 11, 11);
+    border-radius: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 144px;
+    right: 37%;
+    opacity: 0;
+}
+.copyActive{
+    opacity: 1;
+}
